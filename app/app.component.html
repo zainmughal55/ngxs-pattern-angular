@@ -1,0 +1,10 @@
+<section class="card">
+	<div class="card-body">
+		<app-user-form ></app-user-form>
+	</div>
+</section>
+<ul class="list-group">
+	<li class="list-group-item" *ngFor="let user of this.users$ | async">
+		😃 {{user.userName}}
+	</li>
+</ul>
